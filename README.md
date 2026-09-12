@@ -146,7 +146,8 @@ CentOS Stream 9 (or later), and Fedora 36 (or later).
 * <sup>‡</sup>At the time of writing, **FreeBSD** is shipping non‑functional
   `cpmtools2` packages with broken `mkfs.cpm` functionality.  To successfully
   build on **FreeBSD**, you *must* rebuild `cpmtools` and ensure it is **not**
-  linked with `libdsk`.  If you receive a `Disc rejected by driver` error on
+  linked with `libdsk`.  If you receive a `Disc rejected by driver` or a
+  `can not make new file system: No such file or directory` error on
   **FreeBSD** from `mkfs.cpm`, your tools are *broken* and *cannot* be used to
   build **CP/M‑386**.
 
@@ -371,13 +372,13 @@ See [FUTURE.md](FUTURE.md).
         </tr><tr>
                 <th>Markdown</th>
                 <th>3</th>
-                <th>652</th>
+                <th>653</th>
                 <th>76</th>
                 <th>0</th>
-                <th>576</th>
+                <th>577</th>
                 <th>0</th>
-                <th>27249</th>
-                <th>503</th>
+                <th>27314</th>
+                <th>505</th>
         </tr><tr>
                 <th>Shell</th>
                 <th>1</th>
@@ -432,13 +433,13 @@ See [FUTURE.md](FUTURE.md).
         <tfoot><tr>
                 <th>Total</th>
                 <th>118</th>
-                <th>55873</th>
+                <th>55874</th>
                 <th>10450</th>
                 <th>10125</th>
-                <th>35298</th>
+                <th>35299</th>
                 <th>6526</th>
-                <th>1608090</th>
-                <th>22503</th>
+                <th>1608155</th>
+                <th>22505</th>
         </tr></tfoot></table>
 <!-- scc-end -->
 
