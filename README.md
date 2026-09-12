@@ -160,7 +160,7 @@ Docker‑based Fedora build is available.
 []()
 * First, build the `cpm386/cpm386-build` container:
   ```sh
-  docker build --progress plain -t cpm386/cpm386-build:latest -f Dockerfile .
+  docker build --rm --progress plain -t cpm386/cpm386-build:latest -f Dockerfile .
   ```
 []()
 
@@ -377,7 +377,7 @@ See [FUTURE.md](FUTURE.md).
                 <th>0</th>
                 <th>577</th>
                 <th>0</th>
-                <th>27314</th>
+                <th>27319</th>
                 <th>505</th>
         </tr><tr>
                 <th>Shell</th>
@@ -438,7 +438,7 @@ See [FUTURE.md](FUTURE.md).
                 <th>10125</th>
                 <th>35299</th>
                 <th>6526</th>
-                <th>1608155</th>
+                <th>1608160</th>
                 <th>22505</th>
         </tr></tfoot></table>
 <!-- scc-end -->
