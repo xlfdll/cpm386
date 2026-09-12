@@ -1766,8 +1766,6 @@ REG BYTE *cmd;
 /*
  * Cold boot only: if A:PROFILE.SUB exists, inject it as the first command
  * via the existing autost/autorom path (same as typing PROFILE.SUB).
- * Missing file is silent — no error message.
- * A static flag ensures warmboot re-entry to ccp() does not re-run it.
  */
 static VOID try_cold_profile(void)
 {
@@ -1801,7 +1799,7 @@ static VOID try_cold_profile(void)
         bdos(SELECT_DISK, (long)sav_disk);
 
         if (r > 3)
-                return; /* not found — silent */
+                return; /* PROFILE.SUB not found */
 
         /* Seed usercmd and enable one-shot cold autostart */
         p = usercmd;
